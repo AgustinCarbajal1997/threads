@@ -9,7 +9,28 @@ import SwiftUI
 
 struct UserCell: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            CircularProfileView()
+            VStack(alignment: .leading){
+                Text("maxverstappen1")
+                    .font(.footnote)
+                    .fontWeight(.semibold)
+
+                
+                Text("Formula 1 Champion")
+                    .font(.footnote)
+                    .multilineTextAlignment(.leading)
+            }
+            Spacer()
+            Text("Follow")
+                .font(.subheadline)
+                .fontWeight(.semibold)
+                .frame(width: 100, height: 32)
+                .overlay {
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(Color(.systemGray3), lineWidth:1)
+                }
+        }
     }
 }
 

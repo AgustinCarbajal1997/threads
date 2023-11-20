@@ -13,6 +13,9 @@
 		9F5363322B0BF8A100D5990B /* CreateThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5363312B0BF8A100D5990B /* CreateThreadView.swift */; };
 		9F5363352B0BF8B500D5990B /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5363342B0BF8B500D5990B /* ActivityView.swift */; };
 		9F5363382B0BF8C200D5990B /* ExplorerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5363372B0BF8C200D5990B /* ExplorerView.swift */; };
+		9F53633A2B0BFB1600D5990B /* ThreadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5363392B0BFB1600D5990B /* ThreadCell.swift */; };
+		9F53633D2B0C085900D5990B /* CircularProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53633C2B0C085900D5990B /* CircularProfileView.swift */; };
+		9F53633F2B0C08F600D5990B /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53633E2B0C08F600D5990B /* UserCell.swift */; };
 		9FDF57212B0A98EB00A63C55 /* treadsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDF57202B0A98EB00A63C55 /* treadsApp.swift */; };
 		9FDF57232B0A98EB00A63C55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDF57222B0A98EB00A63C55 /* ContentView.swift */; };
 		9FDF57252B0A98ED00A63C55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FDF57242B0A98ED00A63C55 /* Assets.xcassets */; };
@@ -29,6 +32,9 @@
 		9F5363312B0BF8A100D5990B /* CreateThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThreadView.swift; sourceTree = "<group>"; };
 		9F5363342B0BF8B500D5990B /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		9F5363372B0BF8C200D5990B /* ExplorerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerView.swift; sourceTree = "<group>"; };
+		9F5363392B0BFB1600D5990B /* ThreadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadCell.swift; sourceTree = "<group>"; };
+		9F53633C2B0C085900D5990B /* CircularProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileView.swift; sourceTree = "<group>"; };
+		9F53633E2B0C08F600D5990B /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		9FDF571D2B0A98EB00A63C55 /* treads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = treads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FDF57202B0A98EB00A63C55 /* treadsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = treadsApp.swift; sourceTree = "<group>"; };
 		9FDF57222B0A98EB00A63C55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				9F5363272B0BF75B00D5990B /* FeedView.swift */,
+				9F5363392B0BFB1600D5990B /* ThreadCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -138,6 +145,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		9F53633B2B0C083E00D5990B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9F53633C2B0C085900D5990B /* CircularProfileView.swift */,
+				9F53633E2B0C08F600D5990B /* UserCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		9FDF57142B0A98EB00A63C55 = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +205,7 @@
 		9FDF572F2B0A997100A63C55 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				9F53633B2B0C083E00D5990B /* Components */,
 				9F53632C2B0BF87000D5990B /* Profile */,
 				9F53632B2B0BF86900D5990B /* CreateThread */,
 				9F53632A2B0BF86100D5990B /* Activity */,
@@ -335,13 +352,16 @@
 				9F53632F2B0BF88800D5990B /* ProfileView.swift in Sources */,
 				9F5363282B0BF75B00D5990B /* FeedView.swift in Sources */,
 				9FDF57382B0A99F700A63C55 /* LoginView.swift in Sources */,
+				9F53633A2B0BFB1600D5990B /* ThreadCell.swift in Sources */,
 				9F5363352B0BF8B500D5990B /* ActivityView.swift in Sources */,
 				9F5363322B0BF8A100D5990B /* CreateThreadView.swift in Sources */,
+				9F53633F2B0C08F600D5990B /* UserCell.swift in Sources */,
 				9FDF57232B0A98EB00A63C55 /* ContentView.swift in Sources */,
 				9F5363242B0BF3DB00D5990B /* ThreadsTabView.swift in Sources */,
 				9FDF573D2B0AA23B00A63C55 /* ThreadsFieldTextModifiers.swift in Sources */,
 				9FDF57212B0A98EB00A63C55 /* treadsApp.swift in Sources */,
 				9FDF573A2B0AA0C500A63C55 /* RegistrationView.swift in Sources */,
+				9F53633D2B0C085900D5990B /* CircularProfileView.swift in Sources */,
 				9F5363382B0BF8C200D5990B /* ExplorerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
