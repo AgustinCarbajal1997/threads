@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F216DBF2B0EC6C200EE6364 /* ProfileThreadFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F216DBE2B0EC6C200EE6364 /* ProfileThreadFilter.swift */; };
 		9F5363242B0BF3DB00D5990B /* ThreadsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5363232B0BF3DB00D5990B /* ThreadsTabView.swift */; };
 		9F5363282B0BF75B00D5990B /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5363272B0BF75B00D5990B /* FeedView.swift */; };
 		9F53632F2B0BF88800D5990B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53632E2B0BF88800D5990B /* ProfileView.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F216DBE2B0EC6C200EE6364 /* ProfileThreadFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileThreadFilter.swift; sourceTree = "<group>"; };
 		9F5363232B0BF3DB00D5990B /* ThreadsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTabView.swift; sourceTree = "<group>"; };
 		9F5363272B0BF75B00D5990B /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		9F53632E2B0BF88800D5990B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F216DBD2B0EC6A900EE6364 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F216DBE2B0EC6C200EE6364 /* ProfileThreadFilter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		9F5363222B0BF2EF00D5990B /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +118,7 @@
 		9F53632C2B0BF87000D5990B /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				9F216DBD2B0EC6A900EE6364 /* Model */,
 				9F53632D2B0BF87700D5990B /* View */,
 			);
 			path = Profile;
@@ -357,6 +368,7 @@
 				9F5363322B0BF8A100D5990B /* CreateThreadView.swift in Sources */,
 				9F53633F2B0C08F600D5990B /* UserCell.swift in Sources */,
 				9FDF57232B0A98EB00A63C55 /* ContentView.swift in Sources */,
+				9F216DBF2B0EC6C200EE6364 /* ProfileThreadFilter.swift in Sources */,
 				9F5363242B0BF3DB00D5990B /* ThreadsTabView.swift in Sources */,
 				9FDF573D2B0AA23B00A63C55 /* ThreadsFieldTextModifiers.swift in Sources */,
 				9FDF57212B0A98EB00A63C55 /* treadsApp.swift in Sources */,
