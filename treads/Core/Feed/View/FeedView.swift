@@ -19,7 +19,7 @@ struct FeedView: View {
                 }
             }
             .refreshable {
-                print("Refreshiiiiiing")
+                print("Refreshiiiiiiiiing")
             }
             .navigationTitle("Threads")
             .navigationBarTitleDisplayMode(.inline)
