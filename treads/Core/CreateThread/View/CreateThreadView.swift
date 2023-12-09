@@ -8,17 +8,21 @@
 import SwiftUI
 
 struct CreateThreadView: View {
-    
-    @State private var caption: String = ""
+    @StateObject var viewModel = CreateThreadViewModel()
+    @State private var caption = ""
     @Environment(\.dismiss) var dismiss
+    
+    private var user: User? {
+        return UserService.shared.currentUser
+    } // esto lo hago pq? pq es una pantalla que está en el tabbar, pero el dato del usuario al abrirse la app puede que no esté, esto por esto hago esto en lugar de let user:User. por lo tanto ya no tengo que pasarle el user a la pantalla
     
     var body: some View {
         NavigationStack{
             VStack{
                 HStack(alignment: .top){
-                    CircularProfileView(user: nil, size: .medium)
+                    CircularProfileView(user: user, size: .medium)
                     VStack(alignment: .leading, spacing: 4){
-                        Text("maxverstappen")
+                        Text(user?.username ?? "")
                             .fontWeight(.semibold)
                         TextField("Enter your link...", text: $caption, axis: .vertical)
                     }
@@ -51,7 +55,8 @@ struct CreateThreadView: View {
                 }
                 ToolbarItem(placement: .navigationBarTrailing){
                     Button("Post"){
-                        
+                        Task { try await viewModel.uploadThread(caption: caption) }
+                        dismiss()
                     }
                     .opacity(caption.isEmpty ? 0.5 : 1)
                     .disabled(caption.isEmpty)
